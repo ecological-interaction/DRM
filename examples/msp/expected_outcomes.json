@@ -1,0 +1,169 @@
+{
+  "scope": "Synthetic structural checks only; no scientific, legal or authority verification.",
+  "cases": [
+    {
+      "file": "valid_register.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "7d7ef46ee673850b2565b82078b65d4239af4e678ae8543173778d43572b1b57"
+    },
+    {
+      "file": "valid_unresolved_external.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [
+        "UNRESOLVED_EXTERNAL_REFERENCE"
+      ],
+      "synthetic_fixture_sha256": "4811364c49ba4f7df8326b02f6eb2715374f128efddb241b0001e6b6239047ae"
+    },
+    {
+      "file": "valid_declared_exception.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [
+        "DECLARED_METHODOLOGICAL_EXCEPTION"
+      ],
+      "synthetic_fixture_sha256": "1941af676b361ecc1cf65df54f9b466be850e47825b03e313085f8d6b9d1b6f6"
+    },
+    {
+      "file": "valid_lifecycle.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "c650a086a02be18d4d433eb2167e7b6d739c82c4465e246490c5dd0d6e27f751"
+    },
+    {
+      "file": "invalid_duplicate_ids.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DUPLICATE_ID"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "dd69f7c0472760079dcf78570af29fd3eeb6059339c209d0cac0e77fa0098b0c"
+    },
+    {
+      "file": "invalid_missing_provenance.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "PROVENANCE_REQUIRED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "934c312907128ca21e8da127dadb87f9c45be352c56b9aee493b6cb10313daa5"
+    },
+    {
+      "file": "invalid_transition.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "TRANSITION_NOT_PERMITTED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "c82e39fa0ea57d67ba520bad4e338a3fe9034c2bc60d0ee47877f2d686c1032f"
+    },
+    {
+      "file": "invalid_missing_acceptance_decision.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DECISION_REQUIRED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "186b9d663576dd99dc61da2452aa39f16fa5c68768e532fdcf889cc453433eba"
+    },
+    {
+      "file": "invalid_malformed_relationship.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "OBJECT_REQUIRED",
+        "TEXT_REQUIRED",
+        "UNSUPPORTED_VALUE"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "6348ac4e9a003068c4dae8877504fe714482aed380a61ede3f45e85e65819379"
+    },
+    {
+      "file": "invalid_internal_reference.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "INVALID_INTERNAL_REFERENCE"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "18ed136bd75d41fd6f1204328d55a7d93603f397b05f9af3c2f6b50baaf681cf"
+    },
+    {
+      "file": "invalid_approved_unresolved.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "APPROVED_RELATIONSHIP_UNRESOLVED"
+      ],
+      "expected_limitation_codes": [
+        "UNRESOLVED_EXTERNAL_REFERENCE"
+      ],
+      "synthetic_fixture_sha256": "3692240e049ff35b503d4a5882330f2fe5903854676714792b7b4fb86f06bf84"
+    },
+    {
+      "file": "invalid_version_reuse.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "HISTORY_VERSION_REUSED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "92f658d9150cc02dacdcdc8c25ba6d962764b74ef8cad9cefc0b24578e65356d"
+    },
+    {
+      "file": "invalid_scheme_ownership.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "LOCAL_EXTENSION_OWNERSHIP_REQUIRED",
+        "SCHEME_REFERENCE_MISMATCH"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "a649def870172199f5d016dd6693406766e86833c53a6cf6e79ad2844cdde731"
+    },
+    {
+      "file": "invalid_evidence_status.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "UNSUPPORTED_VALUE"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "1881e9d215ab7b7546acbce4f460942ac97376416184a7538e9532e6e822c38f"
+    },
+    {
+      "file": "invalid_declared_authority_role.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DECLARED_AUTHORITY_ROLE_MISMATCH"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "04cc4e1cbd0988100369ab514f63b014235264cca7075718059c7bd61492f80a"
+    },
+    {
+      "file": "invalid_protocol_version.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "VERSION_UNSUPPORTED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "ceafbe5bb005c2730c8471d369e595c19969f125315d159cbc998137cd59be7c"
+    },
+    {
+      "file": "invalid_required_field.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "TEXT_REQUIRED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "dd87732dd75ac11afebc7a3b83cc27cd55d62c79d84de53fb845d8044d64e005"
+    },
+    {
+      "file": "invalid_accepted_self_revision.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "TERMINAL_STATE_CHANGED"
+      ],
+      "expected_limitation_codes": [],
+      "synthetic_fixture_sha256": "678c1f8a2cd8d44aa48ec788fed8b61cecd93025d80e4788164e2fa896c2b0ea"
+    }
+  ],
+  "public_golden_reference_note": "Synthetic byte pins verified against the earlier synthetic edition during preparation; no private source text or archive dependency. Public checks verify pinned bytes/outcomes, not historical archive custody."
+}

@@ -1,0 +1,245 @@
+{
+  "review_revision": 2,
+  "scope": "Synthetic bounded checks; expected failures are rejections, never scientific/rights approval.",
+  "cases": [
+    {
+      "file": "v2_valid_accepted_unverified.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_correction.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_rework.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_withdrawal.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_supersession.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_file_edition.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_external_scheme.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_multiple_reviews.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_valid_resolved_contested_candidate.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [
+        "CONTESTED_MEANING",
+        "IDENTITY_UNRESOLVED"
+      ]
+    },
+    {
+      "file": "v2_valid_rights_unknown.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [
+        "RIGHTS_UNKNOWN",
+        "SENSITIVITY_UNKNOWN"
+      ]
+    },
+    {
+      "file": "v2_valid_rights_restricted.json",
+      "expected_exit": 0,
+      "expected_error_codes": [],
+      "expected_limitation_codes": [
+        "RESTRICTED_USE"
+      ]
+    },
+    {
+      "file": "v2_invalid_acceptance_implies_verification.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "SCIENTIFIC_ACCEPTANCE_EVIDENCE_MISSING"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_correction_identity.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "CORRECTION_IDENTITY_CHANGED"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_withdraw_after_acceptance.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "TRANSITION_NOT_PERMITTED"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_withdraw_missing_decision.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "ARRAY_REQUIRED",
+        "DECISION_REQUIRED",
+        "OBJECT_REQUIRED",
+        "REQUIRED_SCOPED_REVIEW_MISSING",
+        "REVIEW_DECLARATIONS_REQUIRED",
+        "TEXT_REQUIRED",
+        "UNSUPPORTED_VALUE",
+        "WITHDRAWAL_DECISION_REQUIRED"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_supersession_target.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "INVALID_INTERNAL_REFERENCE"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_embedded_hash.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "EDITION_HASH_MISMATCH"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_file_hash.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "EDITION_HASH_MISMATCH"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_quote.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "EVIDENCE_QUOTE_MISMATCH"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_edition_reference.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "EVIDENCE_EDITION_UNDECLARED"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_extension_steward.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "EXTENSION_STEWARDSHIP_MISMATCH"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_origin_owner_transfer.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "SCHEME_REFERENCE_MISMATCH"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_missing_domain_review.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "REQUIRED_SCOPED_REVIEW_MISSING"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_review_use_scope.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DECLARED_USE_SCOPE_MISMATCH"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_approved_identity_unresolved.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DEPENDENT_RELATIONSHIP_APPROVAL_BLOCKED"
+      ],
+      "expected_limitation_codes": [
+        "CONTESTED_MEANING",
+        "IDENTITY_UNRESOLVED"
+      ]
+    },
+    {
+      "file": "v2_invalid_approved_contested_alignment.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DEPENDENT_RELATIONSHIP_APPROVAL_BLOCKED"
+      ],
+      "expected_limitation_codes": [
+        "CONTESTED_MEANING"
+      ]
+    },
+    {
+      "file": "v2_invalid_rights_review_role.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "REQUIRED_SCOPED_REVIEW_MISSING"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_duplicate_editions.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "DUPLICATE_EVIDENCE_EDITION"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_file_escape.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "EDITION_PATH_OUTSIDE_BASE",
+        "EVIDENCE_LOCATOR_INVALID"
+      ],
+      "expected_limitation_codes": []
+    },
+    {
+      "file": "v2_invalid_structural_review_for_semantics.json",
+      "expected_exit": 1,
+      "expected_error_codes": [
+        "REQUIRED_SCOPED_REVIEW_MISSING"
+      ],
+      "expected_limitation_codes": []
+    }
+  ]
+}

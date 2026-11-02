@@ -1,0 +1,178 @@
+{
+  "document_kind": "synthetic_examples",
+  "synthetic": true,
+  "protocol": "DRM-MSP 0.1.0",
+  "review_revision": 2,
+  "format_version": "msp-review-example-2",
+  "database_scope": "SYNTH-A",
+  "known_material": [
+    {
+      "scope": "SYNTH-A",
+      "id": "SCI-1"
+    },
+    {
+      "scope": "SYNTH-A",
+      "id": "PROP-2"
+    },
+    {
+      "scope": "SYNTH-B",
+      "id": "SCI-2"
+    }
+  ],
+  "classification_schemes": [
+    {
+      "owner": "SYNTH-ORIGIN",
+      "id": "SCHEME-1",
+      "version": "v1"
+    }
+  ],
+  "relationship_types": [
+    "synthetic_alignment"
+  ],
+  "evidence_editions": [
+    {
+      "id": "SYNTH-ED-1",
+      "kind": "embedded",
+      "text": "Synthetic observation-source description.\nNo scientific claim has been verified.\n",
+      "sha256": "ee14c8c843bb392cfcf49a16a908fb0ad7e0a2079908873ca6bc12003820a2d1",
+      "line_count": 2,
+      "origin": "Synthetic fixture composed for review revision 2; no external source."
+    }
+  ],
+  "proposals": [
+    {
+      "id": "PROP-1",
+      "database": "SYNTH-A",
+      "proposal_owner": "SYNTH-PROP-AUTHOR",
+      "asserting_authority": {
+        "id": "SYNTH-CURATOR",
+        "scope": "SYNTH-A"
+      },
+      "intended_use_scope": "synthetic:metadata-review",
+      "proposal_type": "classification_extension",
+      "affected_material": [
+        {
+          "scope": "SYNTH-A",
+          "id": "SCI-1",
+          "kind": "internal",
+          "resolution": "resolved"
+        }
+      ],
+      "provenance": [
+        {
+          "source": "synthetic:evidence-source",
+          "contributor_or_process": "Synthetic author",
+          "evidence_status": "synthetic_example",
+          "edition_id": "SYNTH-ED-1",
+          "locator": {
+            "line_start": 1,
+            "line_end": 1,
+            "quote": "Synthetic observation-source description."
+          }
+        }
+      ],
+      "rationale": "Synthetic documentary proposal; not scientific verification.",
+      "canonical_record": {
+        "scope": "SYNTH-A",
+        "id": "SCI-1",
+        "lifecycle": "source-candidate",
+        "policy_reference": "synthetic:source-owned-policy"
+      },
+      "scientific_evidence": {
+        "status": "not_independently_verified",
+        "basis": "Synthetic source only; no scientific evidence evaluated."
+      },
+      "rights": {
+        "status": "declared_permitted",
+        "sensitivity": "public",
+        "permitted_use": "Synthetic metadata demonstration only.",
+        "review_reference": "synthetic:manual-rights-review",
+        "review": {
+          "reference": "synthetic:decision",
+          "purpose": "documentary_inclusion",
+          "reviews": [
+            {
+              "reviewer": "Synthetic reviewer",
+              "role": "rights_authority",
+              "asserting_authority": "Synthetic role owner",
+              "authority_scope": "SYNTH-A",
+              "use_scope": "synthetic:metadata-review",
+              "reference": "synthetic:review-declaration"
+            }
+          ]
+        }
+      },
+      "state": "accepted",
+      "versions": {
+        "record": "r3",
+        "classification": "v1",
+        "schema": "synthetic-profile-2",
+        "protocol": "DRM-MSP 0.1.0"
+      },
+      "change_history": [
+        {
+          "state": "proposed",
+          "record_version": "r1",
+          "date": "2026-11-01",
+          "actor": "Synthetic curator",
+          "summary": "Synthetic documentary change only.",
+          "action": "propose",
+          "decision": null
+        },
+        {
+          "state": "reviewed",
+          "record_version": "r2",
+          "date": "2026-11-01",
+          "actor": "Synthetic curator",
+          "summary": "Synthetic documentary change only.",
+          "action": "review",
+          "decision": {
+            "reference": "synthetic:decision",
+            "purpose": "documentary_inclusion",
+            "reviews": [
+              {
+                "reviewer": "Synthetic reviewer",
+                "role": "domain_authority",
+                "asserting_authority": "Synthetic role owner",
+                "authority_scope": "SYNTH-A",
+                "use_scope": "synthetic:metadata-review",
+                "reference": "synthetic:review-declaration"
+              }
+            ]
+          }
+        },
+        {
+          "state": "accepted",
+          "record_version": "r3",
+          "date": "2026-11-01",
+          "actor": "Synthetic curator",
+          "summary": "Synthetic documentary change only.",
+          "action": "decision",
+          "decision": {
+            "reference": "synthetic:decision",
+            "purpose": "documentary_inclusion",
+            "reviews": [
+              {
+                "reviewer": "Synthetic reviewer",
+                "role": "domain_authority",
+                "asserting_authority": "Synthetic role owner",
+                "authority_scope": "SYNTH-A",
+                "use_scope": "synthetic:metadata-review",
+                "reference": "synthetic:review-declaration"
+              }
+            ]
+          }
+        }
+      ],
+      "classification_extension": {
+        "origin_scheme_owner": "SYNTH-ORIGIN",
+        "local_extension_steward": "SYNTH-ORIGIN",
+        "proposal_owner": "SYNTH-PROP-AUTHOR",
+        "scheme": "SCHEME-1",
+        "version": "v1",
+        "status": "provisional_local",
+        "definition_reference": "synthetic:unchanged-origin-definition-v1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Public preparation exclusions; explicit allowlist review is the primary boundary.
+# Never rely on ignore rules to remove staged/committed material.
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+/private-archive/
+/internal/
+/history/
+/pilots/
+/outputs/
+MIGRATION.json
+DRM_Historical_Evidence_Register.json
+DRM_Requirements_Crosswalk.json
+DRM_Baseline_Audit.md
+DRM_Phase_1_Baseline_Plan.md
+DRM_AMRKB_Phase_4_Pilot_Plan.md
+DRM_OSDS_Phase_4_Pilot_Plan.md
+DRM_Phase_4_Pilot_Approval_Summary.md
+DRM_MSP_Candidate_Change_Review.md
+DRM_Phase_4_Comparative_Assessment.md

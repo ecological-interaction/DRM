@@ -1,0 +1,327 @@
+{
+  "document_kind": "synthetic_examples",
+  "protocol": "DRM-MSP 0.1.0",
+  "format_version": "msp-review-example-1",
+  "database_scope": "SYNTH-A",
+  "synthetic": true,
+  "known_material": [
+    {
+      "scope": "SYNTH-A",
+      "id": "entity-1"
+    },
+    {
+      "scope": "SYNTH-A",
+      "id": "entity-2"
+    },
+    {
+      "scope": "SYNTH-B",
+      "id": "entity-1"
+    }
+  ],
+  "classification_schemes": [
+    {
+      "owner": "SYNTH-A",
+      "id": "local-scheme",
+      "version": "class-1"
+    }
+  ],
+  "relationship_types": [
+    "uses",
+    "similar_to"
+  ],
+  "proposals": [
+    {
+      "id": "proposal-1",
+      "database": "SYNTH-A",
+      "proposal_type": "proposed_record",
+      "affected_material": [],
+      "provenance": [
+        {
+          "source": "synthetic:fixture-source-1",
+          "contributor_or_process": "Synthetic example generator",
+          "evidence_status": "synthetic_example"
+        }
+      ],
+      "rationale": "Synthetic example only; replace with documented local research rationale.",
+      "state": "accepted",
+      "versions": {
+        "record": "r3",
+        "classification": null,
+        "schema": "synthetic-profile-1",
+        "protocol": "DRM-MSP 0.1.0"
+      },
+      "change_history": [
+        {
+          "state": "proposed",
+          "record_version": "r1",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic proposed decision/revision; no real material changed."
+        },
+        {
+          "state": "reviewed",
+          "record_version": "r2",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic reviewed decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        },
+        {
+          "state": "accepted",
+          "record_version": "r3",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic accepted decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        }
+      ]
+    },
+    {
+      "id": "proposal-2",
+      "database": "SYNTH-A",
+      "proposal_type": "classification_extension",
+      "affected_material": [
+        {
+          "scope": "SYNTH-A",
+          "id": "entity-1",
+          "kind": "internal",
+          "resolution": "resolved"
+        }
+      ],
+      "provenance": [
+        {
+          "source": "synthetic:fixture-source-1",
+          "contributor_or_process": "Synthetic example generator",
+          "evidence_status": "synthetic_example"
+        }
+      ],
+      "rationale": "Synthetic example only; replace with documented local research rationale.",
+      "state": "accepted",
+      "versions": {
+        "record": "r3",
+        "classification": "class-1",
+        "schema": "synthetic-profile-1",
+        "protocol": "DRM-MSP 0.1.0"
+      },
+      "change_history": [
+        {
+          "state": "proposed",
+          "record_version": "r1",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic proposed decision/revision; no real material changed."
+        },
+        {
+          "state": "reviewed",
+          "record_version": "r2",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic reviewed decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        },
+        {
+          "state": "accepted",
+          "record_version": "r3",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic accepted decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        }
+      ],
+      "classification_extension": {
+        "owner": "SYNTH-A",
+        "scheme": "local-scheme",
+        "version": "class-1",
+        "status": "provisional_local"
+      }
+    },
+    {
+      "id": "proposal-3",
+      "database": "SYNTH-A",
+      "proposal_type": "methodological_change",
+      "affected_material": [
+        {
+          "scope": "SYNTH-A",
+          "id": "entity-1",
+          "kind": "internal",
+          "resolution": "resolved"
+        }
+      ],
+      "provenance": [
+        {
+          "source": "synthetic:fixture-source-1",
+          "contributor_or_process": "Synthetic example generator",
+          "evidence_status": "synthetic_example"
+        }
+      ],
+      "rationale": "Synthetic example only; replace with documented local research rationale.",
+      "state": "proposed",
+      "versions": {
+        "record": "r1",
+        "classification": null,
+        "schema": "synthetic-profile-1",
+        "protocol": "DRM-MSP 0.1.0"
+      },
+      "change_history": [
+        {
+          "state": "proposed",
+          "record_version": "r1",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic proposed decision/revision; no real material changed."
+        }
+      ],
+      "methodological_exception": false
+    },
+    {
+      "id": "proposal-4",
+      "database": "SYNTH-A",
+      "proposal_type": "relationship",
+      "affected_material": [
+        {
+          "scope": "SYNTH-A",
+          "id": "entity-1",
+          "kind": "internal",
+          "resolution": "resolved"
+        }
+      ],
+      "provenance": [
+        {
+          "source": "synthetic:fixture-source-1",
+          "contributor_or_process": "Synthetic example generator",
+          "evidence_status": "synthetic_example"
+        }
+      ],
+      "rationale": "Synthetic example only; replace with documented local research rationale.",
+      "state": "accepted",
+      "versions": {
+        "record": "r3",
+        "classification": null,
+        "schema": "synthetic-profile-1",
+        "protocol": "DRM-MSP 0.1.0"
+      },
+      "change_history": [
+        {
+          "state": "proposed",
+          "record_version": "r1",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic proposed decision/revision; no real material changed."
+        },
+        {
+          "state": "reviewed",
+          "record_version": "r2",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic reviewed decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        },
+        {
+          "state": "accepted",
+          "record_version": "r3",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic accepted decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        }
+      ],
+      "relationship": {
+        "source": {
+          "scope": "SYNTH-A",
+          "id": "entity-1",
+          "kind": "internal",
+          "resolution": "resolved"
+        },
+        "target": {
+          "scope": "SYNTH-A",
+          "id": "entity-2",
+          "kind": "internal",
+          "resolution": "resolved"
+        },
+        "type": "uses",
+        "category": "source_assertion",
+        "review_status": "approved"
+      }
+    },
+    {
+      "id": "proposal-5",
+      "database": "SYNTH-A",
+      "proposal_type": "schema_change",
+      "affected_material": [
+        {
+          "scope": "SYNTH-A",
+          "id": "entity-1",
+          "kind": "internal",
+          "resolution": "resolved"
+        }
+      ],
+      "provenance": [
+        {
+          "source": "synthetic:fixture-source-1",
+          "contributor_or_process": "Synthetic example generator",
+          "evidence_status": "synthetic_example"
+        }
+      ],
+      "rationale": "Synthetic example only; replace with documented local research rationale.",
+      "state": "reviewed",
+      "versions": {
+        "record": "r2",
+        "classification": null,
+        "schema": "synthetic-profile-1",
+        "protocol": "DRM-MSP 0.1.0"
+      },
+      "change_history": [
+        {
+          "state": "proposed",
+          "record_version": "r1",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic proposed decision/revision; no real material changed."
+        },
+        {
+          "state": "reviewed",
+          "record_version": "r2",
+          "date": "2026-11-01",
+          "actor": "Synthetic author/process",
+          "summary": "Synthetic reviewed decision/revision; no real material changed.",
+          "decision": {
+            "reference": "synthetic-decision-only",
+            "reviewer": "Synthetic reviewer (declared only)",
+            "authority_role": "domain_authority",
+            "authority_scope": "SYNTH-A"
+          }
+        }
+      ]
+    }
+  ]
+}
